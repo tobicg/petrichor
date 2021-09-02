@@ -18,6 +18,18 @@
             color: white;
             margin-bottom: 10%;
             text-shadow: 0 0 20px black;
+
+            @media (max-width: 768px) {
+                font-size: 60px;
+                margin-bottom: 50%;
+            }
+            
+            @media (max-width: 550px) {
+                font-size: 50px;
+                margin-bottom: 80%;
+                width: 70%;
+            }
+
         }
     }
 }

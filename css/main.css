@@ -72,6 +72,15 @@
       color: white;
       margin-bottom: 10%;
       text-shadow: 0 0 20px black; }
+      @media (max-width: 768px) {
+        .main-index .main-index-txt .main-index-txt-h2 {
+          font-size: 60px;
+          margin-bottom: 50%; } }
+      @media (max-width: 550px) {
+        .main-index .main-index-txt .main-index-txt-h2 {
+          font-size: 50px;
+          margin-bottom: 80%;
+          width: 70%; } }
 
 .main-productos {
   display: flex;
