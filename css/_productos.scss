@@ -37,35 +37,133 @@
             border-top: 1px solid rgba(255, 255, 255, 0.5);
             border-left: 1px solid rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(5px);
+            flex-direction: column;
 
             &:hover {
-                .main-productos-div-card-content img {
+                .main-productos-div-card-img {
                     opacity: 0;
-                    transform: translateY(-200px);
+                    transform: translateY(-100px);
                 }
 
-                .main-productos-div-card-content p{
+                .main-productos-div-card-p{
                     opacity: 1;
                     transform: translateY(0px);
                 }
+
+                .main-productos-div-card-precio{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                .main-productos-div-card-div {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                h3 {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                .main-productos-div-card-btn{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
             }
 
-            .main-productos-div-card-content img{
+            .main-productos-div-card-img{
                 position: absolute;
                 transition: 0.5s;
-                transform: translateY(-115px);
+                transform: translateY(0px);
                 opacity: 1;
             }
 
-            .main-productos-div-card-content p{
-                padding: 20px;
+            h3 {
+                font-family: $text;
+                color: $color2;
+                font-size: 30px;
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+                margin: 20px;
+            }
+
+            .main-productos-div-card-p{
                 text-align: center;
                 transition: 0.5s;
                 font-family: $text;
-                font-size: 24px;
+                font-size: 20px;
                 color: $color2;
                 transform: translateY(100px);
                 opacity: 0;
+                margin: 0 0 20px 0;
+            }
+
+            .main-productos-div-card-precio{
+                text-align: center;
+                transition: 0.5s;
+                font-family: $text;
+                font-size: 25px;
+                color: $color2;
+                transform: translateY(100px);
+                opacity: 0;
+                padding: 10px 0;
+            }
+
+            .main-productos-div-card-div {
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+
+                .main-productos-div-card-div-button {
+                    background-color: $color1;
+                }
+
+                .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+                    background-color: $color5;
+                }
+            }
+
+            .main-productos-div-card-btn {
+                display: flex;
+                background-color: $color5;
+                width: 240px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                border-radius: 30px;
+                margin: 30px;
+                cursor: pointer;
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+
+                &:hover {
+                    background-color: $color6;
+
+                    p {
+                        color: $color5;
+                    }
+
+                    svg {
+                        color: $color5;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    color: $color3;
+                    font-family: $text;
+                    font-size: 18px;
+                    transition: 0.5s;
+                }
+
+                svg {
+                    color: $color3;
+                    margin: 0 10px;
+                    transition: 0.5s;
+                }
             }
         }
     }

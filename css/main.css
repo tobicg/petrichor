@@ -115,26 +115,93 @@
       align-items: center;
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-left: 1px solid rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(5px); }
-      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-content img {
+      backdrop-filter: blur(5px);
+      flex-direction: column; }
+      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-img {
         opacity: 0;
-        transform: translateY(-200px); }
-      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-content p {
+        transform: translateY(-100px); }
+      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-p {
         opacity: 1;
         transform: translateY(0px); }
-      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-content img {
+      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-precio {
+        opacity: 1;
+        transform: translateY(0px); }
+      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-div {
+        opacity: 1;
+        transform: translateY(0px); }
+      .main-productos .main-productos-div .main-productos-div-card:hover h3 {
+        opacity: 1;
+        transform: translateY(0px); }
+      .main-productos .main-productos-div .main-productos-div-card:hover .main-productos-div-card-btn {
+        opacity: 1;
+        transform: translateY(0px); }
+      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-img {
         position: absolute;
         transition: 0.5s;
-        transform: translateY(-115px);
+        transform: translateY(0px);
         opacity: 1; }
-      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-content p {
-        padding: 20px;
+      .main-productos .main-productos-div .main-productos-div-card h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #241713;
+        font-size: 30px;
+        transition: 0.5s;
+        transform: translateY(100px);
+        opacity: 0;
+        margin: 20px; }
+      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-p {
         text-align: center;
         transition: 0.5s;
         font-family: "Tenor Sans", sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         color: #241713;
         transform: translateY(100px);
+        opacity: 0;
+        margin: 0 0 20px 0; }
+      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-precio {
+        text-align: center;
+        transition: 0.5s;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 25px;
+        color: #241713;
+        transform: translateY(100px);
+        opacity: 0;
+        padding: 10px 0; }
+      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-div {
+        transition: 0.5s;
+        transform: translateY(100px);
         opacity: 0; }
+        .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-div .main-productos-div-card-div-button {
+          background-color: #18423e; }
+        .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-div .btn-secondary:not(:disabled):not(.disabled).active, .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-div .btn-secondary:not(:disabled):not(.disabled):active, .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-div .show > .btn-secondary.dropdown-toggle {
+          background-color: #0f2a28; }
+      .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn {
+        display: flex;
+        background-color: #0f2a28;
+        width: 240px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        border-radius: 30px;
+        margin: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+        transform: translateY(100px);
+        opacity: 0; }
+        .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn:hover {
+          background-color: #235f59; }
+          .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn:hover p {
+            color: #0f2a28; }
+          .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn:hover svg {
+            color: #0f2a28; }
+        .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn p {
+          margin: 0;
+          color: #b7b7b7;
+          font-family: "Tenor Sans", sans-serif;
+          font-size: 18px;
+          transition: 0.5s; }
+        .main-productos .main-productos-div .main-productos-div-card .main-productos-div-card-btn svg {
+          color: #b7b7b7;
+          margin: 0 10px;
+          transition: 0.5s; }
 
 /*# sourceMappingURL=main.css.map */

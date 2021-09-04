@@ -511,5 +511,5 @@ VanillaTilt.init(document.querySelectorAll(".main-productos-div-card"), {
   max: 10,
   speed: 400,
   glare: true,
-  "max-glare": 0.5,
+  "max-glare": 0.3,
 });
