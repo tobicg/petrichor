@@ -512,4 +512,5 @@ VanillaTilt.init(document.querySelectorAll(".main-productos-div-card"), {
   speed: 400,
   glare: true,
   "max-glare": 0.3,
-});
+}
+);
