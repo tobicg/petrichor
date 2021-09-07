@@ -39,6 +39,10 @@
             backdrop-filter: blur(5px);
             flex-direction: column;
 
+            @media (max-width: 992px) {
+                display: none;
+            }
+
             &:hover {
                 .main-productos-div-card-img {
                     opacity: 0;
@@ -166,5 +170,155 @@
                 }
             }
         }
+/*Card Mobile*/
+        .main-productos-div-card1 {
+            position: relative;
+            width: 350px;
+            height: 500px;
+            margin: 30px;
+            box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            flex-direction: column;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+
+            &:hover {
+                .main-productos-div-card-img1 {
+                    opacity: 0;
+                    transform: translateY(-100px);
+                }
+
+                .main-productos-div-card-p1{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                .main-productos-div-card-precio1{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                .main-productos-div-card-div1 {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                h3 {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                .main-productos-div-card-btn1{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+            }
+
+            .main-productos-div-card-img1{
+                position: absolute;
+                transition: 0.5s;
+                transform: translateY(0px);
+                opacity: 1;
+            }
+
+            h3 {
+                font-family: $text;
+                color: $color2;
+                font-size: 30px;
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+                margin: 20px;
+            }
+
+            .main-productos-div-card-p1{
+                text-align: center;
+                transition: 0.5s;
+                font-family: $text;
+                font-size: 20px;
+                color: $color2;
+                transform: translateY(100px);
+                opacity: 0;
+                margin: 0 0 20px 0;
+            }
+
+            .main-productos-div-card-precio1{
+                text-align: center;
+                transition: 0.5s;
+                font-family: $text;
+                font-size: 25px;
+                color: $color2;
+                transform: translateY(100px);
+                opacity: 0;
+                padding: 10px 0;
+            }
+
+            .main-productos-div-card-div1 {
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+
+                .main-productos-div-card-div-button1 {
+                    background-color: $color1;
+                }
+
+                .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+                    background-color: $color5;
+                }
+            }
+
+            .main-productos-div-card-btn1 {
+                display: flex;
+                background-color: $color5;
+                width: 240px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                border-radius: 30px;
+                margin: 30px;
+                cursor: pointer;
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
+
+                &:hover {
+                    background-color: $color6;
+
+                    p {
+                        color: $color5;
+                    }
+
+                    svg {
+                        color: $color5;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    color: $color3;
+                    font-family: $text;
+                    font-size: 18px;
+                    transition: 0.5s;
+                }
+
+                svg {
+                    color: $color3;
+                    margin: 0 10px;
+                    transition: 0.5s;
+                }
+            }
+        }
     }
 }
+
