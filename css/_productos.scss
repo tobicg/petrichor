@@ -12,7 +12,7 @@
         margin: 30px;
         font-family: $text;
         font-size: 70px;
-        color: $color5;
+        color: $color4;
         z-index: 2;
 
         @media (max-width: 768px) {
@@ -22,10 +22,11 @@
 }
 
 #compra-completada {
-    bottom: 50%;
+    top: 10%;
     position: fixed;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     width: 40%;
@@ -41,6 +42,15 @@
     z-index: 5;
     transition: 0.5s;
     padding: 30px;
+
+    @media (max-width: 950px) {
+        width: 60%;
+    }
+
+    @media (max-width: 550px) {
+        width: 80%;
+    }
+
 
     p {
         font-family: $text;

@@ -110,17 +110,18 @@
     margin: 30px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 70px;
-    color: #0f2a28;
+    color: #aca89d;
     z-index: 2; }
     @media (max-width: 768px) {
       #divisor-productos h2 {
         font-size: 60px; } }
 
 #compra-completada {
-  bottom: 50%;
+  top: 10%;
   position: fixed;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 40%;
@@ -136,6 +137,12 @@
   z-index: 5;
   transition: 0.5s;
   padding: 30px; }
+  @media (max-width: 950px) {
+    #compra-completada {
+      width: 60%; } }
+  @media (max-width: 550px) {
+    #compra-completada {
+      width: 80%; } }
   #compra-completada p {
     font-family: "Tenor Sans", sans-serif;
     font-size: 24px; }
