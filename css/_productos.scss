@@ -159,6 +159,11 @@
         }
     }
 
+    td {
+        padding: 0;
+        align-items: center;
+    }
+
     table {
         width: 90%;
 
@@ -182,6 +187,7 @@
 
     #sumaresta-carrito {
         width: 30%;
+        padding: 12px 0px;
     }
 
     #precio-carrito {
@@ -234,6 +240,10 @@
         color: $color2;
     }
 
+    td {
+        padding: 12px 5px;
+    }
+
     //texto
     font-family: $text;
     font-size: 18px;
@@ -260,6 +270,14 @@
         flex-wrap: wrap;
         width: 80%;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
         
         .main-productos-div-card {
             position: relative;

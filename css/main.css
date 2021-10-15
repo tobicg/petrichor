@@ -231,6 +231,9 @@
         background-color: #5e8b87;
         cursor: pointer;
         color: #18423e; }
+  #carrito td {
+    padding: 0;
+    align-items: center; }
   #carrito table {
     width: 90%; }
     @media (max-width: 768px) {
@@ -244,7 +247,8 @@
   #carrito #cantidad-carrito {
     width: 10%; }
   #carrito #sumaresta-carrito {
-    width: 30%; }
+    width: 30%;
+    padding: 12px 0px; }
   #carrito #precio-carrito {
     width: 25%; }
   #carrito .btn-sm {
@@ -275,6 +279,8 @@
     border: none;
     text-align: center;
     color: #241713; }
+  #carrito td {
+    padding: 12px 5px; }
   #carrito #card-carrito {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -292,6 +298,12 @@
     flex-wrap: wrap;
     width: 80%;
     justify-content: center; }
+    @media (max-width: 768px) {
+      .main-productos .main-productos-div {
+        width: 90%; } }
+    @media (max-width: 500px) {
+      .main-productos .main-productos-div {
+        width: 100%; } }
     .main-productos .main-productos-div .main-productos-div-card {
       position: relative;
       width: 350px;
