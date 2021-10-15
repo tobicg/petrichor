@@ -1,0 +1,74 @@
+[
+    {
+        "img": "img/remera1.png",
+        "tipo": "Remera",
+        "color":"White - Green",
+        "title": "Evermore",
+        "id": "remeraEvermore",
+        "precio": 900
+    },
+    {
+        "img": "img/remera1.png",
+        "tipo": "Remera",
+        "color":"White - Blue",
+        "title": "SuperB",
+        "id": "remeraSuperB",
+        "precio": 900
+    },
+    {
+        "img": "img/remera1.png",
+        "tipo": "Remera",
+        "color":"Brown - Beige",
+        "title": "Brown",
+        "id": "remeraBrown",
+        "precio": 900
+    },
+    {
+        "img": "img/gorra1.png",
+        "tipo": "Gorra",
+        "color":"White",
+        "title": "PETRICHOR",
+        "id": "gorraBl",
+        "precio": 600
+    },
+    {
+        "img": "img/gorra1.png",
+        "tipo": "Gorra",
+        "color":"Beige",
+        "title": "PETRICHOR",
+        "id": "gorraBe",
+        "precio": 600
+    },
+    {
+        "img": "img/gorra1.png",
+        "tipo": "Gorra",
+        "color":"Negro",
+        "title": "PETRICHOR",
+        "id": "gorraN",
+        "precio": 600
+    },
+    {
+        "img": "img/bolsa1.png",
+        "tipo": "Bolsa",
+        "color":"White - Green",
+        "title": "Evermore",
+        "id": "bolsaEvermore",
+        "precio": 700
+    },
+    {
+        "img": "img/bolsa1.png",
+        "tipo": "Bolsa",
+        "color":"Brown - Beige",
+        "title": "Brown",
+        "id": "bolsaBrown",
+        "precio": 700
+    },
+    {
+        "img": "img/bolsa1.png",
+        "tipo": "Bolsa",
+        "color":"White - Black",
+        "title": "PETRICHOR",
+        "id": "bolsaPetrichor",
+        "precio": 700
+    }
+]

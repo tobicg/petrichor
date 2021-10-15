@@ -1,4 +1,5 @@
 .header {
+    position: fixed;
     width: 100%;
     background-color: $color1;
     display: flex;
@@ -6,23 +7,24 @@
     justify-content: center;
     min-height: 12vh;
     box-shadow: 0 0 10px 1px black;
-    position: relative;
     z-index: 1000;
 
     .header-nav {
-        width: 80%;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
 
         @media (max-width: 1200px) {
             width: 90%;
         }
         
         .header-nav-title {
+            width: 30%;
+            text-align: center;
             font-family: $text;
             font-size: 50px;
+            margin: 0;
 
-            @media (max-width: 768px) {
+            @media (max-width: 1200px) {
                 font-size: 40px;
             }
         }
@@ -34,9 +36,19 @@
                 display: flex;
                 justify-content: space-between;
                 text-align: center;
+                width: 90%;
+                margin: 0px;
+
+                @media (max-width: 992px) {
+                    justify-content: center;
+                }
                 
                 .header-nav-div-ul-li {
-
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    
                     .active {
                         color: white;
                     }
@@ -48,6 +60,8 @@
                         color: $color3;
                         transition: 0.5s;
                         border-radius: 5px;
+                        text-align: center;
+                        margin: 5px;
 
                         @media (max-width: 1400px) {
                             font-size: 20px;
@@ -55,6 +69,7 @@
     
                         @media (max-width: 1200px) {
                             font-size: 18px;
+                            padding: 5px 15px;
                         }
     
                         @media (max-width: 992px) {
@@ -66,7 +81,6 @@
                             background-color: $color3;
                         }
                     }
-                    
                 }
             }
         }
